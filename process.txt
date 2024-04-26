@@ -1,0 +1,263 @@
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker build -t docker build -t staffmandh/nodejs-ci-cd-goc
+[+] Building 0.0s (0/0)                                                                                               docker:default
+ERROR: unable to prepare context: path "build" not found
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker build -t docker build -t staffmandh/nodejs-ci-cd-go .
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+$ docker build -t docker build -t staffmandh/nodejs-ci-cd-goc .
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -                                 -goc (master)
+
+Start a build
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker build -t staffmandh/nodejs-ci-cd-goc .
+[+] Building 8.0s (1/1) FINISHED
+                                 docker:default
+ => [internal] load build definition from Dockerfile                                 -goc (master)
+                                           4.3s
+ => => transferring dockerfile: 31B                                                                                   docker:default
+                                           0.4s                                                                                 4.3s
+ERROR: failed to solve: the Dockerfile cannot be empty                                                                          0.4s
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)                                                                        -goc (master)
+$ docker build -t staffmandh/nodejs-ci-cd-goc .
+[+] Building 215.4s (12/12) FINISHED                                  docker:default
+ => [internal] load build definition from Dockerfile                            1.1s
+ => => transferring dockerfile: 285B                                            0.5s
+ => [internal] load metadata for docker.io/library/node:10-alpine               8.6s
+ => [auth] library/node:pull token for registry-1.docker.io                     0.0s
+ => [internal] load .dockerignore                                               0.8s
+ => => transferring context: 2B                                                 0.0s
+ => [1/6] FROM docker.io/library/node:10-alpine@sha256:dc98dac24efd4254f7597  107.4s
+ => => resolve docker.io/library/node:10-alpine@sha256:dc98dac24efd4254f75976c  1.4s 
+ => => sha256:02767d92553e465bf51e0bd661074f2e70bd575c4a69a0d6 1.16kB / 1.16kB  0.0s 
+ => => sha256:aa67ba258e1877ed6ec455a7f4cc69e25cf0f0b027a7f6f3 6.73kB / 6.73kB  0.0s
+ => => sha256:dc98dac24efd4254f75976c40bce46944697a110d06ce7fa 1.65kB / 1.65kB  0.0s
+ => => sha256:de915e575d22c7e33c83fddaf7aee0672e5d6a67e598a 22.21MB / 22.21MB  32.4s 
+ => => sha256:7150aa69525b95f82b3df6a61a002f82382b2f3ea8ce51b 2.35MB / 2.35MB  11.1s 
+ => => sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453 2.82MB / 2.82MB  16.6s
+ => => sha256:d7aa47be044e5a988e3e7f204e2e28cb9f070daa32ed081072a 280B / 280B  18.0s
+ => => extracting sha256:ddad3d7c1e96adf9153f8921a7c9790f880a390163df453be156  16.0s
+ => => extracting sha256:de915e575d22c7e33c83fddaf7aee0672e5d6a67e598a26fe0b3  58.7s
+ => => extracting sha256:7150aa69525b95f82b3df6a61a002f82382b2f3ea8ce51b9000b9  2.2s
+ => => extracting sha256:d7aa47be044e5a988e3e7f204e2e28cb9f070daa32ed081072ad6  0.0s
+ => [internal] load build context                                              33.1s
+ => => transferring context: 3.09MB                                            30.9s
+ => [2/6] RUN mkdir -p /home/node/app/node_modules && chown -R node:node /hom  26.5s 
+ => [3/6] WORKDIR /home/node/app                                                1.9s 
+ => [4/6] COPY package*.json ./                                                 1.8s 
+ => [5/6] RUN npm install                                                      55.1s 
+ => [6/6] COPY --chown=node:node . .                                            2.8s 
+ => exporting to image                                                          3.2s
+ => => exporting layers                                                         2.9s 
+ => => writing image sha256:afa7de9be56aa5e31b263429a50703a8f012b892670ae3949c  0.1s 
+ => => naming to docker.io/staffmandh/nodejs-ci-cd-goc                          0.3s 
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker images
+REPOSITORY                    TAG       IMAGE ID       CREATED         SIZE
+staffmandh/nodejs-ci-cd-goc   latest    afa7de9be56a   2 minutes ago   90.4MB        
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --staffmandh/nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd
+unknown flag: --staffmandh/nodejs-ci-cd-goc
+See 'docker run --help'.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --afa7de9be56a nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cdcunknown flag: --afa7de9be56a
+See 'docker run --help'.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd
+Unable to find image 'staffmandh/nodejs-ci-cd:latest' locally
+docker: Error response from daemon: manifest for staffmandh/nodejs-ci-cd:latest not found: manifest unknown: manifest unknown.
+See 'docker run --help'.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker images
+REPOSITORY                    TAG       IMAGE ID       CREATED         SIZE
+staffmandh/nodejs-ci-cd-goc   latest    afa7de9be56a   9 minutes ago   90.4MB        
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ ^C
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd-goc
+d08079dff01ed73655f29015565a07a7c017408a1e52af2d7fe1e356be7e7147
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3000 -> 0.0.0.0:0: listen tcp 0.0.0.0:3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 4000:4000 -d staffmandh/nodejs-ci-cd-goc     
+docker: Error response from daemon: Conflict. The container name "/nodejs-ci-cd-goc" 
+is already in use by container "d08079dff01ed73655f29015565a07a7c017408a1e52af2d7fe1e356be7e7147". You have to remove (or rename) that container to be able to reuse that 
+name.
+See 'docker run --help'.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker push
+"docker push" requires exactly 1 argument.
+See 'docker push --help'.
+
+Usage:  docker push [OPTIONS] NAME[:TAG]
+
+Upload an image to a registry
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker push nodejs-ci-cd-goc
+Using default tag: latest
+The push refers to repository [docker.io/library/nodejs-ci-cd-goc]
+An image does not exist locally with the tag: nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED        
+ STATUS    PORTS     NAMES
+d08079dff01e   staffmandh/nodejs-ci-cd-goc   "docker-entrypoint.s…"   5 minutes ago  
+ Created             nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker rm staffmandh/nodejs-ci-cd-goc
+Error response from daemon: No such container: staffmandh/nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker remove staffmandh/nodejs-ci-cd-goc
+Error response from daemon: No such container: staffmandh/nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker remove nodejs-ci-cd-goc
+nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd-goc
+53e8a6271e9d15f82e87622c8db3dedf07bec0286df3404e390bf661f49051d7
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3000 -> 0.0.0.0:0: listen tcp 0.0.0.0:3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker remove nodejs-ci-cd-goc
+nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 4000:4000 -d staffmandh/nodejs-ci-cd-goc     
+c58da158417db9f61245e81065d11f1c7a8dfcac8ecca1bc2747f8115f8aed65
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker push nodejs-ci-cd-goc
+Using default tag: latest
+The push refers to repository [docker.io/library/nodejs-ci-cd-goc]
+An image does not exist locally with the tag: nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker push  staffmandh/nodejs-ci-cd-goc  
+Using default tag: latest
+The push refers to repository [docker.io/staffmandh/nodejs-ci-cd-goc]
+231b677abd8e: Pushed
+6c64d15cdd95: Pushed
+2a4281c0ad71: Pushed
+5f70bf18a086: Pushed
+5b94b5cc0608: Pushed
+edff9ff691d5: Mounted from library/node
+cbe4b9146f86: Mounted from library/node
+a6524c5b12a6: Mounted from library/node
+9a5d14f9f550: Mounted from library/node
+latest: digest: sha256:0525cb8ab3067c6d714a6a52aac680efa5a47a5cc05eb6a7fc0d23c50f4bb507 size: 2201
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED         STATUS                     PORTS     NAMES
+c58da158417d   staffmandh/nodejs-ci-cd-goc   "docker-entrypoint.s…"   5 minutes ago   Exited (2) 4 minutes ago             nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker logs ^C
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker logs c58da158417d
+sh: missing ]
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker logs c58da158417d
+sh: missing ]
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker ps a
+"docker ps" accepts no arguments.
+See 'docker ps --help'.
+
+Usage:  docker ps [OPTIONS]
+
+List containers
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS                      PORTS     NAMES
+c58da158417d   staffmandh/nodejs-ci-cd-goc   "docker-entrypoint.s…"   11 minutes ago   Exited (2) 10 minutes ago             nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker remove c58da158417d
+c58da158417d
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker images
+REPOSITORY                    TAG       IMAGE ID       CREATED          SIZE
+staffmandh/nodejs-ci-cd-goc   latest    afa7de9be56a   31 minutes ago   90.4MB
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker rmi afa7de9be56a
+Untagged: staffmandh/nodejs-ci-cd-goc:latest
+Untagged: staffmandh/nodejs-ci-cd-goc@sha256:0525cb8ab3067c6d714a6a52aac680efa5a47a5cc05eb6a7fc0d23c50f4bb507
+Deleted: sha256:afa7de9be56aa5e31b263429a50703a8f012b892670ae3949c51cc2d635cc110
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker build -t staffmandh/nodejs-ci-cd-goc .
+[+] Building 26.9s (12/12) FINISHED                                                                                   docker:default
+ => [internal] load build definition from Dockerfile                                                                            1.6s
+ => => transferring dockerfile: 309B                                                                                            1.0s
+ => [internal] load metadata for docker.io/library/node:10-alpine                                                               4.2s
+ => [auth] library/node:pull token for registry-1.docker.io                                                                     0.0s
+ => [internal] load .dockerignore                                                                                               0.3s
+ => => transferring context: 2B                                                                                                 0.0s 
+ => [1/6] FROM docker.io/library/node:10-alpine@sha256:dc98dac24efd4254f75976c40bce46944697a110d06ce7fa47e7268470cf2e28         0.0s
+ => [internal] load build context                                                                                               2.0s 
+ => => transferring context: 36.43kB                                                                                            1.2s
+ => CACHED [2/6] RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app                                  0.0s
+ => CACHED [3/6] WORKDIR /home/node/app                                                                                         0.0s 
+ => CACHED [4/6] COPY package*.json ./                                                                                          0.0s
+ => CACHED [5/6] RUN npm install                                                                                                0.0s 
+ => [6/6] COPY --chown=node:node . .                                                                                            8.5s 
+ => exporting to image                                                                                                          2.1s 
+ => => exporting layers                                                                                                         1.7s 
+ => => writing image sha256:8e251afdfa00513b2e7280b8b96f21466c39a1c1eb3eed839b9fe4227d330c7e                                    0.1s 
+ => => naming to docker.io/staffmandh/nodejs-ci-cd-goc                                                                          0.3s 
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd-goc
+ee7488b8194b1d3de6ba16fa3e650e802dee73e2d1e530d71b24c097d7c23cee
+docker: Error response from daemon: Ports are not available: exposing port TCP 0.0.0.0:3000 -> 0.0.0.0:0: listen tcp 0.0.0.0:3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker ps -a
+CONTAINER ID   IMAGE                         COMMAND                  CREATED          STATUS    PORTS     NAMES
+ee7488b8194b   staffmandh/nodejs-ci-cd-goc   "docker-entrypoint.s…"   31 seconds ago   Created             nodejs-ci-cd-goc
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker remove ee7488b8194b
+ee7488b8194b
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$ docker run --name nodejs-ci-cd-goc -p 3000:3000 -d staffmandh/nodejs-ci-cd-goc
+cabc69ab54fba93c311b28fadf85f437e666558f98b653e23252f56698cbaac9
+
+Admin@DESKTOP-QI6H2EA MINGW64 ~/Documents/Cyber_School/CLOUD ENGINEERING/nodejs-ci-cd-goc (master)
+$s
